@@ -1,0 +1,51 @@
+{
+  "name": "next-prisma-template",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint --ext js,jsx,ts,tsx --fix"
+  },
+  "dependencies": {
+    "@next-auth/prisma-adapter": "^0.5.4",
+    "@prisma/client": "^2.29.1",
+    "axios": "^0.21.1",
+    "next": "latest",
+    "next-auth": "^3.28.0",
+    "next-connect": "^0.10.2",
+    "next-seo": "^4.26.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.0",
+    "react-query": "^3.19.6"
+  },
+  "devDependencies": {
+    "@prisma/studio": "^0.422.0",
+    "@types/node": "^12.12.21",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "prisma": "^2.29.1",
+    "tailwindcss": "^2.2.7",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prisma": {
+    "schema": "src/server/prisma/schema.prisma"
+  }
+}
