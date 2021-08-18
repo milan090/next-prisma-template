@@ -14,7 +14,12 @@ const IndexPage = () => {
 
   return (
     <HeroLayout title="Title">
-      <h1>Hello Next.js 👋</h1>
+      <h1>
+        Hello Next.js{" "}
+        <span role="img" aria-label="Wave">
+          👋
+        </span>
+      </h1>
 
       {loading && <p>Loading...</p>}
 

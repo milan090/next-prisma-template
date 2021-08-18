@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { getSession } from "next-auth/client";
 import nc from "next-connect";
 import { error } from "next/dist/build/output/log";
-import { User } from "src/types/auth.types"
+import { User } from "src/types/auth.types";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
